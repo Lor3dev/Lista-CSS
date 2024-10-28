@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Layout</title>
+    <style>
+        
+        .box {
+            height: 100px;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            line-height: 100px;
+        }
+        #box1 { background-color: purple; }
+        #box2 { background-color: green; }
+        #box3 { background-color: red; }
+        #box4 { background-color: yellow; color: black; }
+
+       
+        .layout-a .box {
+            width: 100%;
+            display: block;
+        }
+
+        
+        .layout-b {
+            display: flex;
+        }
+        .layout-b .box {
+            flex: 1; 
+        }
+
+
+        .layout-c {
+            display: grid;
+            height: 100vh;
+            place-items: center;
+        }
+        .layout-c .box {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Layout B -->
+    <div class="layout-b">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+    </div>

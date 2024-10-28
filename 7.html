@@ -1,0 +1,72 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 7</title>
+    <style>
+        /* Estilos para o HTML e body */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3; 
+            border: 2px solid #000;
+                
+            }
+
+ 
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            display: inline-block;
+        }
+
+      
+        #box1 {
+            background-color: #ff9999;
+            padding: 20px; 
+            border-top: 2px dashed #333; 
+            border-radius: 5%;
+        }
+        #box2 {
+            background-color: #99ccff;
+            border-radius: 5% 7% 0 0;
+        }
+        #box3 {
+            background: linear-gradient(to bottom right, #ffcc99, #ff9966);
+        }
+        #box4 {
+            background-color: #ccffcc;
+            border-radius: 50%; 
+            opacity: 0.5;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 10px 16px teal;
+        }
+
+
+        .box {
+            outline: 1px solid #555;
+        }
+
+
+        .box {
+            margin: 10px;
+        }
+
+  
+        #box1:hover {
+            background-color: #ff6666;
+        }
+        #box2:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="box1" class="box">div-1</div>
+    <div id="box2" class="box">div-2</div>
+    <div id="box3" class="box">div-3</div>
+    <div id="box4" class="box">div-4</div>
